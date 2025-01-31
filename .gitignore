@@ -4,6 +4,8 @@
 .cache
 .output
 .env
+.idea
+.husky
 dist
 
 # package manager
