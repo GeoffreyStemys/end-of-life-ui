@@ -1,0 +1,58 @@
+{
+  "name": "end-of-life-ui",
+  "version": "1.0.0",
+  "description": "UI for End-Of-Life to ease project management",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "lint:fix": "eslint --ext .ts,.js,.vue . --fix",
+    "lint:style": "stylelint **/*.{css,scss,sass,html,vue}",
+    "lint:style:fix": "stylelint **/*.{css,scss,sass,html,vue} --fix",
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.2",
+    "@commitlint/cz-commitlint": "^17.1.2",
+    "@mdi/font": "^7.4.47",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@types/node": "^22.12.0",
+    "commitizen": "^4.3.1",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "inquirer": "^12.3.3",
+    "lint-staged": "^15.4.3",
+    "nuxt": "^3.15.4",
+    "postcss": "^8.5.1",
+    "postcss-html": "^1.8.0",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.4",
+    "standard-version": "^9.5.0",
+    "stylelint": "^16.14.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard": "^37.0.0",
+    "vite-plugin-vuetify": "^2.0.4",
+    "vuetify": "^3.7.9"
+  }
+}
