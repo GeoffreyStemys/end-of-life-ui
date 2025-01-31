@@ -1,17 +1,18 @@
+.idea/
+.husky/
+
 # nuxtjs
-.nuxt
-.nitro
-.cache
-.output
+.nuxt/
+.nitro/
+.cache/
+.output/
 .env
-.idea
-.husky
 dist
 
 # package manager
 .pnp.*
 .yarn/*
-node_modules
+node_modules/
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
