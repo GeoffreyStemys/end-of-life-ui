@@ -12,7 +12,10 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
-  ],
+    // '@nuxt/ui',
+    '@primevue/nuxt-module'
+
+],
   vite: {
     vue: {
       template: {

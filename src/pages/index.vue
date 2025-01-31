@@ -1,19 +1,9 @@
 <template>
+  <h1>End of life UI</h1>
+
   <div>
-    <h1>Welcome to the homepage</h1>
     <p>Glad that you had try my template</p>
-
-    <v-data-table-server
-      v-model:items-per-page="itemsPerPage"
-      :headers="headers"
-      :items="serverItems"
-      :items-length="totalItems"
-      :loading="loading"
-      :search="search"
-      item-value="name"
-      @update:options="loadItems"
-    ></v-data-table-server>
-
+<!--    <UButton>Button</UButton>-->
     <v-btn
       class="ma-2"
       variant="text"
@@ -39,5 +29,50 @@
       active-color="primary"
     />
   </div>
+  <div>
+    <p>Some tests 23</p>
+<!--      <UDivider label="OR" />-->
+    <Button label="Submit" />
+    <SplitButton label="Save" @click="save" :model="items" />  </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from 'primevue/button';
+import SplitButton from 'primevue/splitbutton';
+
+
+
+import { useToast } from "primevue/usetoast";
+const toast = useToast();
+
+const items = [
+  {
+    label: 'Update',
+    icon: 'pi pi-refresh',
+    command: () => {
+      toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
+    }
+  },
+  {
+    label: 'Delete',
+    icon: 'pi pi-times',
+    command: () => {
+      toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+    }
+  },
+  {
+    separator: true
+  },
+  {
+    label: 'Quit',
+    icon: 'pi pi-power-off',
+    command: () => {
+      window.location.href = 'https://vuejs.org/';
+    }
+  }
+];
+
+const save = () => {
+  toast.add({ severity: 'success', summary: 'Success', detail: 'Data Saved', life: 3000 });
+};
+
+</script>

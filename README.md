@@ -53,3 +53,8 @@ yarn release
 
 To have a list of available vuetify components check:
 https://vuetifyjs.com/en/components/buttons/#usage
+https://primevue.org/button/
+https://ui.nuxt.com/components/button
+
+https://primevue.org/datatable/#row_edit
+https://primevue.org/datatable/#dtproducts

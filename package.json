@@ -2,7 +2,8 @@
   "name": "end-of-life-ui",
   "version": "1.0.0",
   "description": "UI for End-Of-Life to ease project management",
-  "private": true,
+  "private": false,
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=22"
   },
@@ -54,5 +55,15 @@
     "stylelint-config-standard": "^37.0.0",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.9"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "latest",
+    "@nuxt/icon": "latest",
+    "@nuxt/ui": "latest",
+    "@nuxt/devtools": "latest",
+    "@pinia/nuxt": "latest",
+    "@vueuse/nuxt": "latest",
+    "@nuxtjs/tailwindcss": "latest",
+    "@primevue/nuxt-module": "latest"
   }
 }
