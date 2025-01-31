@@ -44,3 +44,6 @@ Create a release tag and generates change log based on commit history
 ```bash
 yarn release
 ```
+
+To have a list of available vuetify components check:
+https://vuetifyjs.com/en/components/buttons/#usage
